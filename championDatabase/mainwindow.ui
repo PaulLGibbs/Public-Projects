@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>860</width>
+    <height>609</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>160</y>
+      <width>502</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="health">
+       <property name="text">
+        <string>Health: X (+Y per level)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="armor">
+       <property name="text">
+        <string>Armor: X (+Y per level)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="mana">
+       <property name="text">
+        <string>Mana: X (+Y per level) </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="manaRegen">
+       <property name="text">
+        <string>Mana Regen: X (+Y per level) </string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="attackDamage">
+       <property name="text">
+        <string>Attack Damage: X (+Y per level)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="attackSpeed">
+       <property name="text">
+        <string>Attack Speed:X (+Y% per level) </string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="magicResist">
+       <property name="text">
+        <string>Magic Resist: X (+Y per level)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="movementSpeed">
+       <property name="text">
+        <string>Movement Speed: X</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="healthRegen">
+       <property name="text">
+        <string>Health Regen: X (+Y per level) </string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="goToSite">
+       <property name="text">
+        <string>Click for Website</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>160</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Champions:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="champList">
+       <item>
+        <property name="text">
+         <string>Aatrox</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ahri</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Akali</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Alistar</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Amumu</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Anivia</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Annie</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ashe</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Aurelion Sol</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Azir</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bard</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Blitzcrank</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Brand</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Braum</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Caitlyn</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Camille</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cassiopeia</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cho'Gath</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Corki</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Darius</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Diana</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dr. Mundo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Draven</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ekko</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Elise</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Evelynn</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ezreal</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>FiddleSticks</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fiora</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fizz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Galio</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gangplank</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Garen</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gnar</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Gragas</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Graves</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hecarim</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Heimerdinger</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Illaoi</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Irelia</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ivern</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Janna</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Jarvan IV</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Jax</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Jayce</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Jhin</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Jinx</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kalista</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Karma</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Karthus</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kassadin</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Katarina</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kayle</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kennen</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kha'Zix</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kindred</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kled</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kog'Maw</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LeBlanc</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lee Sin</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Leona</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lissandra</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lucian</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lulu</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lux</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Malphite</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Malzahar</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Maokai</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Master Yi</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Miss Fortune</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mordekaiser</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Morgana</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nami</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nasus</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nautilus</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nidalee</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nocturne</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nunu</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Olaf</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Orianna</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pantheon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Poppy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Quinn</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rammus</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rek'Sai</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Renekton</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rengar</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Riven</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rumble</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ryze</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sejuani</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Shaco</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Shen</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Shyvana</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Singed</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sion</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sivir</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Skarner</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sona</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Soraka</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Swain</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Syndra</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tahm Kench</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Taliyah</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Talon</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Taric</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Teemo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Thresh</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tristana</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Trundle</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tryndamere</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Twisted Fate</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Twitch</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Udyr</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Urgot</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Varus</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vayne</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Veigar</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vel'Koz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vi</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Viktor</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vladimir</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Volibear</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Warwick</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Monkey King</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Xerath</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Xin Zhao</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Yasuo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Yorick</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Zac</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Zed</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ziggs</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Zilean</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Zyra</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>60</y>
+      <width>231</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="champName">
+         <property name="text">
+          <string>Champ Name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="champTitle">
+         <property name="text">
+          <string>Champ Title</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="champRegion">
+         <property name="text">
+          <string>Region/Association</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="champImg">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>171</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Champ Img &lt;Temp&gt;</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>110</y>
+      <width>120</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>860</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
